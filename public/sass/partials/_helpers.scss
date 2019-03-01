@@ -1,0 +1,51 @@
+.hide {
+  text-indent: -999999px;
+  font-size: 0;
+}
+
+.button {
+  border: 0;
+  background: $yellow;
+  color: $black;
+  font-family: $font-default;
+  font-weight: 600;
+}
+
+.avatar {
+ min-width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ align-self: center;
+}
+
+.card {
+  background: white;
+  padding: 5rem;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.15);
+}
+
+pre.error {
+  padding: 5rem;
+  background: white;
+  line-height: 3;
+  white-space: pre-line;
+}
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.container {
+  @include clearfix;
+  margin: 0 auto;
+  max-width: $content;
+  padding: 0 ($space * 0.5);
+
+  @media (min-width: $bp-md) {
+    padding: 0 ($space * 0.75);
+  }
+}

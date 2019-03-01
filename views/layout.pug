@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= `${title} | ${h.siteName}`
+    link(rel='stylesheet', href='/dist/main.css')
+    link(rel="shortcut icon" type="image/png" href="/img/icon.png")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    block header
+      header.top
+        nav.nav
+          .nav__section.nav__section--pages
+            li.nav__item
+              a.nav__link.nav__link--logo(href="/")
+                img(src="./img/logo.png" alt="Logo" width="60")
+
+    .content
+      block content
+
+    block scripts
+      script(src="/dist/main.bundle.js")

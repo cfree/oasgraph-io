@@ -1,0 +1,45 @@
+$color-light: #FFF;
+$color-dark: #000;
+$color-gray-light: #4B5767;
+$color-gray: #182337;
+$color-primary: #CE312C;
+$color-primary-light: #FF372D;
+$color-secondary: $color-gray-light; // links, etc.
+$color-secondary-dark: $color-gray;
+$color-icon: #E9E9E9;
+
+$black: #303030;
+$width: 800px;
+$purple: #262161;
+$yellow: #FFC40E;
+$pink: #EE7297;
+$green: #93FF00;
+$red: #E50714;
+$grey: lighten(grey, 40%);
+$shad: 0 0 10px rgba(0,0,0,0.1), 0 5px 10px rgba(0,0,0,0.05);
+$grad: linear-gradient(
+  90deg, 
+  $color-primary-light 0%,
+  $color-primary 20%, 
+  $color-gray-light 60%
+);
+$verticalGrad: linear-gradient(0, #48ded4 0%, #a026bf 20%, #e82c75 60%, $yellow 85%, #48ded4 95%);
+
+$font-default: 'Open Sans';
+$font-primary: 'Josefin Sans';
+$font-secondary: 'Merriweather';
+
+// Breakpoints
+$bp-sm: 480px;
+$bp-md: 720px;
+$bp-lg: 960px;
+$bp-xl: 1800px;
+$max-width: 1200px;
+$content: 760px;
+
+// Typography
+$space: 20px;
+$content-vertical-padding: 110px;
+
+// Misc
+$box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.09);
